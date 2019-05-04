@@ -36,7 +36,9 @@ class Momento:
         var = (1/(N-1))*self.m22
         sigma = var**0.5
         Adev = (1/N)*self.m21
-        print ("varianza: %0.4f\n, desviacion estandar: %0.4f, desviacion absoluta: %0.4f\n" % (var, sigma, Adev))
+        print ("varianza: %0.4f\n" % (var))
+        print ("desviacion estandar: %0.4f\n" % (sigma))
+        print ("desviacion absoluta: %0.4f\n" % (Adev))
         return(sigma)
 
     def momento3(self, media ,N, sigma):
